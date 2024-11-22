@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>WebHost</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>Choose the Perfect Hosting Plan</h2>
+                <p>Our hosting solutions provide the best support and reliability for your needs.</p>
+            </section>
+
+            <section class="plans-container">
+                <div class="plan-card" id="basic-plan">
+                    <div class="plan-header">
+                        <h3>Basic Plan</h3>
+                        <p class="price">$5/month</p>
+                    </div>
+                    <ul>
+                        <li>10GB Storage</li>
+                        <li>100GB Bandwidth</li>
+                        <li>1 Domain</li>
+                    </ul>
+                    <p class="support">Email Support</p>
+                    <button onclick="selectPlan('Basic')">Buy Now</button>
+                </div>
+                <div class="plan-card" id="pro-plan">
+                    <div class="plan-header">
+                        <h3>Pro Plan</h3>
+                        <p class="price">$15/month</p>
+                    </div>
+                    <ul>
+                        <li>50GB Storage</li>
+                        <li>500GB Bandwidth</li>
+                        <li>5 Domains</li>
+                    </ul>
+                    <p class="support">Email + Phone Support</p>
+                    <button onclick="selectPlan('Pro')">Buy Now</button>
+                </div>
+                <div class="plan-card" id="business-plan">
+                    <div class="plan-header">
+                        <h3>Business Plan</h3>
+                        <p class="price">$25/month</p>
+                    </div>
+                    <ul>
+                        <li>Unlimited Storage</li>
+                        <li>Unlimited Bandwidth</li>
+                        <li>Unlimited Domains</li>
+                    </ul>
+                    <p class="support">24/7 Support</p>
+                    <button onclick="selectPlan('Business')">Buy Now</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contact Us: support@webhost.com</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

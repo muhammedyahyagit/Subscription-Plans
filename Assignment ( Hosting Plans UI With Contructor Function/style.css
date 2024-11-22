@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 20px;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.intro p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: #ffffff;
+    color: #333;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan-header h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-top: 5px;
+}
+
+.plan-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.plan-card ul li {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.support {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #777;
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
